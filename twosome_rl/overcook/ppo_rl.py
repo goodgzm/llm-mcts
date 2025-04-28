@@ -5,7 +5,7 @@ import gym
 import time
 import core_rl
 from gym_macro_overcooked.macActEnvWrapper import MacEnvWrapper
-
+from distutils.util import strtobool
 class PPOBuffer:
     def __init__(self, obs_dim, act_dim, size, gamma = 0.99, lam = 0.95):
         self.obs_buf = np.zeros(core_rl.combined_shape(size, obs_dim), dtype = np.float32)
@@ -54,7 +54,7 @@ class PPOBuffer:
 def ppo(env_fn, actor_critic = core_rl.MLPActorCritic, ac_kwargas = dict(), seed = 0,
         steps_per_epoch = 4000, epochs = 50, gamma = 0.99, clip_ratio = 0.2, pi_lr = 3e-4,
         vf_lr = 1e-3, train_pi_iters = 80, train_v_iters = 80, lam = 0.97, max_ep_len = 1000,
-        target_kl = 0.01, save_freq = 10):
+        target_kl = 0.01, save_freq = 10, ent_coef = 0.01, norm_adv = False):
     
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -71,14 +71,16 @@ def ppo(env_fn, actor_critic = core_rl.MLPActorCritic, ac_kwargas = dict(), seed
         obs, act, adv, logp_old = data['obs'], data['act'], data['adv'], data['logp']
         # print(act)
         # input()
-        pi, logp = ac.pi(obs, act)
-
+        pi, logp, entropy = ac.pi(obs, act)
+        if norm_adv:
+            adv = (adv - adv.mean()) / (adv.std() + 1e-8)
         ratio = torch.exp(logp - logp_old)
         clip_adv = torch.clamp(ratio, 1 - clip_ratio, 1 + clip_ratio) * adv
         loss_pi = -(torch.min(ratio * adv, clip_adv)).mean() #PyTorch 默认最小化，因此加了负号。
-
+        loss_entropy = entropy.mean()
+        loss = loss_pi - ent_coef * loss_entropy
         approx_kl = (logp_old - logp).mean().item()
-        return loss_pi, approx_kl
+        return loss, approx_kl
     
     def compute_loss_v(data):
         obs, ret = data['obs'], data['ret']
@@ -89,10 +91,16 @@ def ppo(env_fn, actor_critic = core_rl.MLPActorCritic, ac_kwargas = dict(), seed
 
     def update():
         data = buf.get()
-
+        total_loss_pi = 0
+        total_loss_v = 0
+        total_kl = 0
+        train_pi_iters_n = 0
         for i in range(train_pi_iters):
             pi_optimizer.zero_grad()
             loss_pi, kl = compute_loss_pi(data)
+            total_kl += kl
+            total_loss_pi += loss_pi
+            train_pi_iters_n += 1
             if kl > 1.5 * target_kl:
                 print(f"Early stopping at step {i} due to reaching max kl.")
                 break
@@ -103,9 +111,11 @@ def ppo(env_fn, actor_critic = core_rl.MLPActorCritic, ac_kwargas = dict(), seed
         for i in range(train_v_iters):
             vf_optimizer.zero_grad()
             loss_v = compute_loss_v(data)
+            total_loss_v += loss_v
             loss_v.backward()
             vf_optimizer.step()
         
+        return total_loss_pi / train_pi_iters_n, total_kl / train_pi_iters_n, total_loss_v / train_v_iters
 
     start_time = time.time()
     o, ep_ret, ep_len = env.reset(), 0, 0
@@ -113,7 +123,7 @@ def ppo(env_fn, actor_critic = core_rl.MLPActorCritic, ac_kwargas = dict(), seed
     for epoch in range(epochs):
         for t in range(steps_per_epoch):
             a, v, logp = ac.step(torch.as_tensor(o, dtype = torch.float32))
-            next_o, r, d, _ = env.step(a)
+            next_o, r, d, info = env.step(a)
             ep_ret += r
             ep_len += 1
 
@@ -130,9 +140,18 @@ def ppo(env_fn, actor_critic = core_rl.MLPActorCritic, ac_kwargas = dict(), seed
                     _, v, _ = ac.step(torch.as_tensor(o, dtype = torch.float32))
                 buf.finish_path(v)
                 if terminal:
-                    print(f"Episode reward: {ep_ret}, Episode length: {ep_len}")
+                    for item in info:
+                        if "episode" in item.keys():
+                            print(f"episodic_return={item['episode']['r']}, episodic_length={item['episode']['l']}")
+                            wandb.log({"epoch": epoch, "episodic_return": item['episode']['r'], "episodic_length": item['episode']['l']})
+                            print(f"Episode reward: {ep_ret}, Episode length: {ep_len}")
                 o, ep_ret, ep_len = env.reset(), 0, 0
-        update()
+        loss_pi, kl, loss_v = update()
+        wandb.log({
+            "loss_pi": loss_pi,
+            "loss_v": loss_v,
+            "kl": kl,
+        })
 
 def make_env(env_id, seed, idx, capture_video, run_name, env_params):
     def thunk():
@@ -152,6 +171,10 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--env-id', type = str, default = 'Overcooked-LLMA-v4')
+    parser.add_argument('--task', type=int, default=0,
+        help='The receipt agent cooks')
+    parser.add_argument('--map-type', type=str, default="A",
+        help='The type of map')
     parser.add_argument('--hid', type= int, default = 64)
     parser.add_argument('--l', type = int, default = 2)
     parser.add_argument('--gamma', type = float, default = 0.99)
@@ -159,19 +182,42 @@ if __name__ == '__main__':
     parser.add_argument('--steps', type=int, default=4000)
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--exp-name', type=str, default='ppo')
-    parser.add_argument('--env-reward', type=float, nargs=4,  default=[0.1, 1, 0, 0.001], 
+    parser.add_argument('--env-reward', type=float, nargs=4,  default=[0.2, 1, 0, 0.001], 
         help='The reward list of the env')
+    parser.add_argument("--ent-coef", type=float, default=0.01,
+        help="coefficient of the entropy")
+    parser.add_argument("--norm-adv", type=lambda x: bool(strtobool(x)), default=False, nargs="?", const=True,
+        help="Toggles advantages normalization")
+    parser.add_argument("--track", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
+        help="if toggled, this experiment will be tracked with Weights and Biases")
+    parser.add_argument("--wandb-project-name", type=str, default="twosome_ppo",
+        help="the wandb's project name")
+    parser.add_argument("--cuda", type = lambda x : bool(strtobool(x)), default = False, nargs = "?", const = True,
+        help = "whether to use cuda")
     args = parser.parse_args()
 
     time_str = time.strftime("%Y%m%d_%H_%M_%S", time.localtime())
     run_name = f"{args.env_id}_task={0}_exp_name={args.exp_name}_seed={args.seed}_{time_str}"
+    device = "cpu"
+    if args.cuda == True:
+        device = torch.device(f"cuda" if torch.cuda.is_available() and args.cuda else "cpu")
+    if args.track:
+        import wandb
+        wandb.init(
+            project = args.wandb_project_name,
+            sync_tensorboard = True,
+            config = vars(args),
+            name = run_name,
+            monitor_gym = True,
+            save_code = True,
+        )
     
     rewardList = {"subtask finished": args.env_reward[0], "correct delivery": args.env_reward[1], "wrong delivery": -args.env_reward[2], "step penalty": -args.env_reward[3]}
     TASKLIST = ["tomato salad", "lettuce salad", "onion salad", "lettuce-tomato salad", "onion-tomato salad", "lettuce-onion salad", "lettuce-onion-tomato salad"]
     env_params = {'grid_dim': [7,7],
-                    'task': TASKLIST[0],
+                    'task': TASKLIST[args.task],
                     'rewardList': rewardList,
-                    'map_type': "A",
+                    'map_type': args.map_type,
                     'n_agent': 1,
                     'obs_radius': 2,
                     'mode': "vector",
@@ -182,7 +228,8 @@ if __name__ == '__main__':
     envs = gym.vector.SyncVectorEnv(
         [make_env(args.env_id, args.seed + i, i, False, run_name, env_params) for i in range(1)]
     )
+    assert isinstance(envs.single_action_space, gym.spaces.Discrete), "only discrete action space is supported"
     ppo(envs, actor_critic = core_rl.MLPActorCritic,
         ac_kwargas = dict(hidden_sizes = [args.hid] * args.l), 
         seed = args.seed, steps_per_epoch = args.steps, epochs = args.epochs,
-        gamma = args.gamma, max_ep_len = 1000, save_freq = 10)
+        gamma = args.gamma, max_ep_len = 1000, save_freq = 10, ent_coef = args.ent_coef, norm_adv = args.norm_adv)

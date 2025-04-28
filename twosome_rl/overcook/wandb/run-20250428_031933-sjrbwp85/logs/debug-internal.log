@@ -1,0 +1,10 @@
+{"time":"2025-04-28T03:19:33.458605621-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/twosome_rl/overcook/wandb/run-20250428_031933-sjrbwp85/logs/debug-core.log"}
+{"time":"2025-04-28T03:19:33.839464626-04:00","level":"INFO","msg":"created new stream","id":"sjrbwp85"}
+{"time":"2025-04-28T03:19:33.839541262-04:00","level":"INFO","msg":"stream: started","id":"sjrbwp85"}
+{"time":"2025-04-28T03:19:33.839599812-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"sjrbwp85"}
+{"time":"2025-04-28T03:19:33.839613469-04:00","level":"INFO","msg":"handler: started","stream_id":"sjrbwp85"}
+{"time":"2025-04-28T03:19:33.839665623-04:00","level":"INFO","msg":"sender: started","stream_id":"sjrbwp85"}
+{"time":"2025-04-28T03:19:34.179633575-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-28T03:19:34.179809367-04:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-04-28T03:45:05.135366021-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/gxh2538351719-xiamen-university/twosome_ppo/sjrbwp85/file_stream"}
+{"time":"2025-04-28T03:45:05.135484708-04:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/gxh2538351719-xiamen-university/twosome_ppo/sjrbwp85/file_stream: {\"error\":\"run twosome_ppo/sjrbwp85 not found while streaming file\"}"}

@@ -1,0 +1,10 @@
+{"time":"2025-04-28T03:23:01.954670501-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/twosome_rl/overcook/wandb/run-20250428_032301-sdphypk6/logs/debug-core.log"}
+{"time":"2025-04-28T03:23:02.333877855-04:00","level":"INFO","msg":"created new stream","id":"sdphypk6"}
+{"time":"2025-04-28T03:23:02.333930043-04:00","level":"INFO","msg":"stream: started","id":"sdphypk6"}
+{"time":"2025-04-28T03:23:02.33396603-04:00","level":"INFO","msg":"sender: started","stream_id":"sdphypk6"}
+{"time":"2025-04-28T03:23:02.334042715-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"sdphypk6"}
+{"time":"2025-04-28T03:23:02.333986753-04:00","level":"INFO","msg":"handler: started","stream_id":"sdphypk6"}
+{"time":"2025-04-28T03:23:02.710934655-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-28T03:23:02.711456787-04:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-04-28T03:24:03.692795064-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/gxh2538351719-xiamen-university/twosome_ppo/sdphypk6/file_stream"}
+{"time":"2025-04-28T03:24:03.692892547-04:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/gxh2538351719-xiamen-university/twosome_ppo/sdphypk6/file_stream: {\"error\":\"run twosome_ppo/sdphypk6 not found while streaming file\"}"}

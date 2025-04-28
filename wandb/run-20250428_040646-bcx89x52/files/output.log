@@ -1,0 +1,840 @@
+pygame 2.4.0 (SDL 2.26.4, Python 3.9.21)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:25: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.act_buf[self.ptr] = act
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:26: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.rew_buf[self.ptr] = rew
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:27: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.val_buf[self.ptr] = val
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:28: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.logp_buf[self.ptr] = logp
+episodic_return=0.6454107653519211, episodic_length=64
+Episode reward: [1.11340904], Episode length: 21
+episodic_return=0.0784977125780556, episodic_length=201
+Episode reward: [-0.00165046], Episode length: 85
+episodic_return=0.2642019647901331, episodic_length=132
+Episode reward: [1.0087799], Episode length: 36
+episodic_return=0.26717755410216987, episodic_length=131
+Episode reward: [1.04791711], Episode length: 46
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19499323], Episode length: 54
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19550471], Episode length: 67
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20100021], Episode length: 71
+episodic_return=-0.007533090782766037, episodic_length=202
+Episode reward: [-0.00168577], Episode length: 68
+episodic_return=0.6652743651323126, episodic_length=57
+Episode reward: [1.08195106], Episode length: 16
+episodic_return=-0.05659401943585314, episodic_length=204
+Episode reward: [-0.00339285], Episode length: 62
+episodic_return=0.18901445955689272, episodic_length=164
+Episode reward: [1.01510055], Episode length: 69
+episodic_return=0.6332017156613876, episodic_length=62
+Episode reward: [1.11564234], Episode length: 17
+episodic_return=-0.08751221877410477, episodic_length=207
+Episode reward: [-0.2034995], Episode length: 80
+episodic_return=0.1129866624079588, episodic_length=185
+Episode reward: [0.99543196], Episode length: 56
+episodic_return=-0.05753594374075035, episodic_length=202
+Episode reward: [-0.00070042], Episode length: 53
+episodic_return=-0.053175245511227, episodic_length=200
+Episode reward: [0.0008544], Episode length: 60
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.1984973], Episode length: 63
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19924976], Episode length: 80
+episodic_return=-0.056973034204687856, episodic_length=200
+Episode reward: [0.00077849], Episode length: 65
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19633972], Episode length: 66
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19521666], Episode length: 60
+episodic_return=0.21951585754368738, episodic_length=146
+Episode reward: [1.0335962], Episode length: 43
+episodic_return=0.13737705783934606, episodic_length=177
+Episode reward: [1.00280762], Episode length: 61
+episodic_return=0.40697554144738657, episodic_length=127
+Episode reward: [1.24790584], Episode length: 46
+episodic_return=0.11491952460966876, episodic_length=183
+Episode reward: [0.95856483], Episode length: 61
+episodic_return=0.6100869479873894, episodic_length=65
+Episode reward: [1.07413131], Episode length: 15
+episodic_return=0.06869561981265815, episodic_length=202
+Episode reward: [-0.00228512], Episode length: 72
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19905037], Episode length: 70
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19781676], Episode length: 64
+episodic_return=0.2938111703090291, episodic_length=125
+Episode reward: [1.05403278], Episode length: 41
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19582301], Episode length: 56
+episodic_return=0.22083529182503925, episodic_length=145
+Episode reward: [1.0342042], Episode length: 52
+episodic_return=0.6240557226477184, episodic_length=68
+Episode reward: [1.10935507], Episode length: 31
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19593722], Episode length: 69
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.20075046], Episode length: 94
+episodic_return=0.01642539097055692, episodic_length=200
+Episode reward: [0.00027], Episode length: 61
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19598479], Episode length: 69
+episodic_return=0.29455074787148444, episodic_length=132
+Episode reward: [1.04676269], Episode length: 50
+episodic_return=0.3337368255681924, episodic_length=115
+Episode reward: [1.06352694], Episode length: 40
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19698906], Episode length: 52
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19832584], Episode length: 79
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19897402], Episode length: 73
+episodic_return=0.17097665794075811, episodic_length=162
+Episode reward: [1.01758572], Episode length: 57
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19799002], Episode length: 56
+episodic_return=0.4423495828436563, episodic_length=92
+Episode reward: [1.08626651], Episode length: 31
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19608145], Episode length: 71
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19546432], Episode length: 63
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19724895], Episode length: 76
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19880986], Episode length: 58
+episodic_return=0.37047119456474603, episodic_length=115
+Episode reward: [1.06356604], Episode length: 41
+episodic_return=-0.025542710750041817, episodic_length=202
+Episode reward: [0.19471411], Episode length: 54
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19811076], Episode length: 73
+episodic_return=0.005539058447594975, episodic_length=208
+Episode reward: [-0.00706366], Episode length: 64
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19534727], Episode length: 56
+episodic_return=-0.038118703305287716, episodic_length=200
+Episode reward: [0.00055967], Episode length: 61
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19689199], Episode length: 64
+episodic_return=-0.042754578640909285, episodic_length=200
+Episode reward: [0.00040915], Episode length: 60
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19511114], Episode length: 56
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19633319], Episode length: 60
+episodic_return=0.2339667741827741, episodic_length=142
+Episode reward: [1.03751205], Episode length: 39
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19516628], Episode length: 55
+episodic_return=0.2701797141442892, episodic_length=133
+Episode reward: [1.04607375], Episode length: 46
+episodic_return=0.09400776293458984, episodic_length=202
+Episode reward: [-0.00142644], Episode length: 60
+episodic_return=-0.01905115233442333, episodic_length=200
+Episode reward: [0.00045204], Episode length: 63
+episodic_return=0.48526975805466316, episodic_length=87
+Episode reward: [1.05293453], Episode length: 17
+episodic_return=0.1374366417865745, episodic_length=174
+Episode reward: [1.00613456], Episode length: 56
+episodic_return=0.1239630818748893, episodic_length=180
+Episode reward: [1.00025835], Episode length: 52
+episodic_return=0.1673711451699907, episodic_length=162
+Episode reward: [1.0178838], Episode length: 45
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19573983], Episode length: 65
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.1957413], Episode length: 68
+episodic_return=0.39975306383902764, episodic_length=104
+Episode reward: [1.07458971], Episode length: 36
+episodic_return=0.2030223894069641, episodic_length=154
+Episode reward: [1.02542036], Episode length: 51
+episodic_return=0.7714638754582226, episodic_length=45
+Episode reward: [1.13205225], Episode length: 14
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.20085122], Episode length: 83
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.20049963], Episode length: 80
+episodic_return=0.19600858682448533, episodic_length=157
+Episode reward: [1.02230222], Episode length: 60
+episodic_return=0.09456515750745512, episodic_length=197
+Episode reward: [0.94495695], Episode length: 62
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.2001222], Episode length: 75
+episodic_return=0.24721579774653796, episodic_length=136
+Episode reward: [1.04336569], Episode length: 36
+episodic_return=0.4985049953037333, episodic_length=96
+Episode reward: [1.08101676], Episode length: 59
+episodic_return=0.07186594808712903, episodic_length=208
+Episode reward: [0.18849304], Episode length: 66
+episodic_return=0.08310548138535173, episodic_length=202
+Episode reward: [0.94023108], Episode length: 66
+episodic_return=0.1606161148023014, episodic_length=177
+Episode reward: [1.00313563], Episode length: 59
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19593897], Episode length: 69
+episodic_return=0.35416132322286725, episodic_length=118
+Episode reward: [1.06034758], Episode length: 49
+episodic_return=0.10573741218185644, episodic_length=190
+Episode reward: [0.99116615], Episode length: 52
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.1963391], Episode length: 76
+episodic_return=0.0041919836577485265, episodic_length=204
+Episode reward: [-0.0025001], Episode length: 47
+episodic_return=0.794240203578635, episodic_length=44
+Episode reward: [1.13285706], Episode length: 20
+episodic_return=0.6016747600663672, episodic_length=66
+Episode reward: [1.11167952], Episode length: 20
+episodic_return=0.07823375922061793, episodic_length=203
+Episode reward: [-0.00242335], Episode length: 61
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20087822], Episode length: 55
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19660754], Episode length: 76
+episodic_return=0.1580043514600711, episodic_length=165
+Episode reward: [0.97687526], Episode length: 42
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20141208], Episode length: 60
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19872097], Episode length: 77
+episodic_return=0.11828011449359419, episodic_length=182
+Episode reward: [0.99843371], Episode length: 52
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20057212], Episode length: 70
+episodic_return=0.48526975805466316, episodic_length=87
+Episode reward: [1.09109852], Episode length: 30
+episodic_return=0.43392696385864676, episodic_length=93
+Episode reward: [1.04652022], Episode length: 32
+episodic_return=0.28654237967819435, episodic_length=130
+Episode reward: [1.04847174], Episode length: 50
+episodic_return=0.09415234243322029, episodic_length=197
+Episode reward: [0.9837179], Episode length: 60
+episodic_return=0.08316158832794071, episodic_length=204
+Episode reward: [-0.00329552], Episode length: 56
+episodic_return=-0.0602970955950441, episodic_length=208
+Episode reward: [-0.0079171], Episode length: 73
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19563754], Episode length: 65
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19626299], Episode length: 67
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19640155], Episode length: 83
+episodic_return=0.23291702098302208, episodic_length=140
+Episode reward: [1.0398659], Episode length: 34
+episodic_return=0.895634159850448, episodic_length=31
+Episode reward: [1.14599225], Episode length: 6
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20275595], Episode length: 89
+episodic_return=0.09507590528289796, episodic_length=193
+Episode reward: [0.94833957], Episode length: 73
+episodic_return=0.38384808700403433, episodic_length=107
+Episode reward: [1.07158698], Episode length: 41
+episodic_return=0.15522246875577442, episodic_length=167
+Episode reward: [1.01290662], Episode length: 47
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19697333], Episode length: 68
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19549174], Episode length: 54
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20062196], Episode length: 61
+episodic_return=0.13701025370039507, episodic_length=184
+Episode reward: [0.99533846], Episode length: 78
+episodic_return=-0.08751221877410477, episodic_length=207
+Episode reward: [-0.20236948], Episode length: 64
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.2004504], Episode length: 58
+episodic_return=-0.05679270622759479, episodic_length=208
+Episode reward: [-0.00765587], Episode length: 73
+episodic_return=0.2387005871753438, episodic_length=140
+Episode reward: [1.03898185], Episode length: 49
+episodic_return=0.11950414962606212, episodic_length=185
+Episode reward: [0.9955886], Episode length: 54
+episodic_return=-0.054497072290506515, episodic_length=205
+Episode reward: [-0.00384707], Episode length: 58
+episodic_return=0.1515835449883685, episodic_length=169
+Episode reward: [0.97238236], Episode length: 50
+episodic_return=0.3276999695527161, episodic_length=118
+Episode reward: [1.06050656], Episode length: 44
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19675886], Episode length: 66
+episodic_return=0.38302628337898725, episodic_length=137
+Episode reward: [1.19969297], Episode length: 41
+episodic_return=0.6911704319852232, episodic_length=55
+Episode reward: [1.12244581], Episode length: 15
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19950099], Episode length: 64
+episodic_return=0.7469905035723599, episodic_length=49
+Episode reward: [1.12811116], Episode length: 19
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19680049], Episode length: 54
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19979729], Episode length: 69
+episodic_return=0.5051265558812872, episodic_length=91
+Episode reward: [1.08645046], Episode length: 55
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19969906], Episode length: 65
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19601486], Episode length: 52
+episodic_return=0.5599253416348822, episodic_length=99
+Episode reward: [1.27534778], Episode length: 34
+episodic_return=0.23353410992429138, episodic_length=140
+Episode reward: [1.0007931], Episode length: 46
+episodic_return=0.2591883886525086, episodic_length=133
+Episode reward: [1.04627619], Episode length: 43
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19551402], Episode length: 67
+episodic_return=0.20834199756211227, episodic_length=148
+Episode reward: [1.03170266], Episode length: 43
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19956098], Episode length: 64
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19809302], Episode length: 61
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19661066], Episode length: 80
+episodic_return=0.4807850410561298, episodic_length=85
+Episode reward: [1.09309114], Episode length: 26
+episodic_return=0.3462627152956865, episodic_length=120
+Episode reward: [1.05803864], Episode length: 58
+episodic_return=0.29945078673490927, episodic_length=123
+Episode reward: [1.05560956], Episode length: 41
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19830455], Episode length: 55
+episodic_return=0.46144327053136996, episodic_length=88
+Episode reward: [1.05161833], Episode length: 28
+episodic_return=-0.05637144552357433, episodic_length=200
+Episode reward: [-0.00035706], Episode length: 77
+episodic_return=-0.059011738189775106, episodic_length=209
+Episode reward: [-0.00777525], Episode length: 65
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19926536], Episode length: 77
+episodic_return=0.1863280652987373, episodic_length=155
+Episode reward: [1.02500954], Episode length: 47
+episodic_return=-0.05726932418778301, episodic_length=200
+Episode reward: [-0.00017217], Episode length: 74
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19726447], Episode length: 72
+episodic_return=0.5636188881938597, episodic_length=71
+Episode reward: [1.06803241], Episode length: 24
+episodic_return=0.4345271710050125, episodic_length=95
+Episode reward: [1.08283842], Episode length: 40
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20108764], Episode length: 70
+episodic_return=0.23967658502501993, episodic_length=138
+Episode reward: [1.04187366], Episode length: 34
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20034628], Episode length: 60
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19993013], Episode length: 85
+episodic_return=0.08449945215415287, episodic_length=207
+Episode reward: [-0.00623252], Episode length: 60
+episodic_return=-0.04681324669567321, episodic_length=202
+Episode reward: [-0.00153961], Episode length: 65
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19675419], Episode length: 64
+episodic_return=-0.05283760119806562, episodic_length=200
+Episode reward: [0.00061409], Episode length: 67
+episodic_return=0.505613362777947, episodic_length=86
+Episode reward: [1.09162179], Episode length: 39
+episodic_return=0.38638592398710636, episodic_length=105
+Episode reward: [1.07357097], Episode length: 37
+episodic_return=0.36722037790217765, episodic_length=109
+Episode reward: [1.06941708], Episode length: 38
+episodic_return=-0.023640197878013344, episodic_length=200
+Episode reward: [7.9241217e-05], Episode length: 73
+episodic_return=0.005508381294557397, episodic_length=201
+Episode reward: [-0.00016355], Episode length: 56
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20164281], Episode length: 58
+episodic_return=0.5985921002455565, episodic_length=67
+Episode reward: [1.11079987], Episode length: 17
+episodic_return=0.5408016156636473, episodic_length=84
+Episode reward: [1.09421002], Episode length: 24
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19864082], Episode length: 62
+episodic_return=0.4175503621220953, episodic_length=105
+Episode reward: [1.07252522], Episode length: 57
+episodic_return=0.01825064543794133, episodic_length=202
+Episode reward: [-0.00145417], Episode length: 56
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19767547], Episode length: 77
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19662292], Episode length: 71
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19835908], Episode length: 72
+episodic_return=0.6632707236316983, episodic_length=61
+Episode reward: [1.07771532], Episode length: 25
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19913015], Episode length: 55
+episodic_return=0.5009361273219057, episodic_length=87
+Episode reward: [1.09111249], Episode length: 28
+episodic_return=0.5755843594310492, episodic_length=77
+Episode reward: [1.10095214], Episode length: 26
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.1988198], Episode length: 51
+episodic_return=0.3434927062700216, episodic_length=117
+Episode reward: [1.06135284], Episode length: 42
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20180794], Episode length: 70
+episodic_return=0.13890656790044525, episodic_length=177
+Episode reward: [0.96416195], Episode length: 64
+episodic_return=0.675480059908354, episodic_length=59
+Episode reward: [1.11832769], Episode length: 22
+episodic_return=0.3729195562047737, episodic_length=108
+Episode reward: [1.07091718], Episode length: 26
+episodic_return=0.6058134492177161, episodic_length=69
+Episode reward: [1.07032551], Episode length: 16
+episodic_return=0.316847156842327, episodic_length=118
+Episode reward: [1.06124784], Episode length: 30
+episodic_return=0.8391072891902769, episodic_length=37
+Episode reward: [1.1013038], Episode length: 13
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19712806], Episode length: 79
+episodic_return=-0.05443467406496975, episodic_length=202
+Episode reward: [-0.00154871], Episode length: 64
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19715764], Episode length: 73
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19665711], Episode length: 58
+episodic_return=-0.054107058125553574, episodic_length=202
+Episode reward: [-0.0016123], Episode length: 65
+episodic_return=0.3078564515718847, episodic_length=124
+Episode reward: [1.05510265], Episode length: 38
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20022304], Episode length: 61
+episodic_return=-0.059940077217469356, episodic_length=201
+Episode reward: [-0.0002952], Episode length: 52
+episodic_return=-0.025159757940240886, episodic_length=202
+Episode reward: [-0.00229317], Episode length: 70
+episodic_return=-0.04773631273764471, episodic_length=200
+Episode reward: [-5.64624746e-05], Episode length: 64
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20146247], Episode length: 69
+episodic_return=0.6962379357608306, episodic_length=59
+Episode reward: [1.11807205], Episode length: 28
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19880041], Episode length: 72
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19552484], Episode length: 58
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19609022], Episode length: 78
+episodic_return=0.1898037179282281, episodic_length=158
+Episode reward: [1.02180905], Episode length: 51
+episodic_return=-0.03740091488839747, episodic_length=202
+Episode reward: [-0.00197873], Episode length: 65
+episodic_return=0.5917283726600361, episodic_length=73
+Episode reward: [1.10432769], Episode length: 36
+episodic_return=0.3237320649407118, episodic_length=116
+Episode reward: [1.0631899], Episode length: 28
+episodic_return=-0.0056556379785389676, episodic_length=200
+Episode reward: [0.00018278], Episode length: 75
+episodic_return=0.11376453721777666, episodic_length=197
+Episode reward: [0.98316974], Episode length: 75
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19784505], Episode length: 69
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19781652], Episode length: 69
+episodic_return=-0.08751221877410477, episodic_length=207
+Episode reward: [-0.20215947], Episode length: 65
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19720976], Episode length: 76
+episodic_return=-0.08763709658636372, episodic_length=208
+Episode reward: [-0.20375446], Episode length: 67
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.1976683], Episode length: 49
+episodic_return=-0.054695987888833036, episodic_length=204
+Episode reward: [-0.00298643], Episode length: 62
+episodic_return=0.5080162284191129, episodic_length=90
+Episode reward: [1.08794343], Episode length: 35
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19688977], Episode length: 57
+episodic_return=-0.08763709658636372, episodic_length=208
+Episode reward: [-0.20335316], Episode length: 65
+episodic_return=0.050631150941691475, episodic_length=205
+Episode reward: [-0.0053078], Episode length: 69
+episodic_return=0.3026413738834327, episodic_length=134
+Episode reward: [1.04552981], Episode length: 32
+episodic_return=-0.04929378761679729, episodic_length=206
+Episode reward: [-0.00604309], Episode length: 74
+episodic_return=0.5124244762076403, episodic_length=88
+Episode reward: [1.09019012], Episode length: 29
+episodic_return=0.27076539945832734, episodic_length=131
+Episode reward: [1.04846699], Episode length: 36
+episodic_return=0.3883817074695293, episodic_length=103
+Episode reward: [1.07590192], Episode length: 28
+episodic_return=0.1990394578957459, episodic_length=152
+Episode reward: [1.02743133], Episode length: 49
+episodic_return=0.12032412943763474, episodic_length=184
+Episode reward: [0.99604251], Episode length: 60
+episodic_return=0.43591631523764557, episodic_length=93
+Episode reward: [1.08564085], Episode length: 22
+episodic_return=0.27807831553774, episodic_length=135
+Episode reward: [1.04370581], Episode length: 55
+episodic_return=0.8291951507681585, episodic_length=39
+Episode reward: [1.13799225], Episode length: 14
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.1957768], Episode length: 64
+episodic_return=-0.05866846833461666, episodic_length=204
+Episode reward: [-0.00326769], Episode length: 64
+episodic_return=-0.059081783651270495, episodic_length=205
+Episode reward: [-0.00447975], Episode length: 69
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19627151], Episode length: 67
+episodic_return=-0.058380978460309416, episodic_length=204
+Episode reward: [-0.00255146], Episode length: 57
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19930968], Episode length: 57
+episodic_return=0.4022369490391188, episodic_length=101
+Episode reward: [1.07757833], Episode length: 35
+episodic_return=0.12167407708396552, episodic_length=186
+Episode reward: [0.99402286], Episode length: 73
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19610259], Episode length: 52
+episodic_return=0.11639157557289376, episodic_length=186
+Episode reward: [0.99389334], Episode length: 65
+episodic_return=0.2748470083371773, episodic_length=191
+Episode reward: [1.18429422], Episode length: 88
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.196448], Episode length: 61
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20036686], Episode length: 64
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19699313], Episode length: 68
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19789354], Episode length: 52
+episodic_return=0.12841792937708668, episodic_length=179
+Episode reward: [1.00134025], Episode length: 49
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19777524], Episode length: 83
+episodic_return=0.599930043762696, episodic_length=67
+Episode reward: [1.07191488], Episode length: 23
+episodic_return=0.07133677715892825, episodic_length=206
+Episode reward: [-0.00614701], Episode length: 73
+episodic_return=0.3003212311251373, episodic_length=125
+Episode reward: [1.05418089], Episode length: 38
+episodic_return=0.07056320456413726, episodic_length=206
+Episode reward: [0.93653448], Episode length: 60
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20175817], Episode length: 68
+episodic_return=0.3478908107861285, episodic_length=112
+Episode reward: [1.06659254], Episode length: 38
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19848716], Episode length: 70
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19893557], Episode length: 69
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20105572], Episode length: 61
+episodic_return=0.010719388368716932, episodic_length=205
+Episode reward: [-0.00494694], Episode length: 76
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19912616], Episode length: 69
+episodic_return=0.6448712565071015, episodic_length=61
+Episode reward: [1.11675705], Episode length: 16
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20114669], Episode length: 65
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19767906], Episode length: 61
+episodic_return=0.15379187869287395, episodic_length=186
+Episode reward: [0.99321039], Episode length: 97
+episodic_return=-0.05283760119806562, episodic_length=200
+Episode reward: [0.00047988], Episode length: 65
+episodic_return=0.0721208242145273, episodic_length=200
+Episode reward: [0.0004276], Episode length: 60
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19554476], Episode length: 61
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19675976], Episode length: 74
+episodic_return=0.03095619269393612, episodic_length=208
+Episode reward: [-0.00685287], Episode length: 55
+episodic_return=0.4404081470914366, episodic_length=96
+Episode reward: [1.08172176], Episode length: 43
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19922457], Episode length: 71
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.19980136], Episode length: 57
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19897532], Episode length: 61
+episodic_return=0.7153882792677548, episodic_length=52
+Episode reward: [1.12528779], Episode length: 18
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20054319], Episode length: 64
+episodic_return=0.214450669517721, episodic_length=147
+Episode reward: [0.9938795], Episode length: 43
+episodic_return=0.879456838714409, episodic_length=33
+Episode reward: [1.14399225], Episode length: 8
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19507327], Episode length: 49
+episodic_return=0.7661308239871898, episodic_length=48
+Episode reward: [1.12940532], Episode length: 11
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19626359], Episode length: 70
+episodic_return=-0.03955870666612171, episodic_length=200
+Episode reward: [-0.00052199], Episode length: 88
+episodic_return=-0.03458494023865859, episodic_length=200
+Episode reward: [2.59812317e-05], Episode length: 68
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19603124], Episode length: 66
+episodic_return=-0.04362714297298784, episodic_length=200
+Episode reward: [0.00100542], Episode length: 56
+episodic_return=0.2344434490277681, episodic_length=150
+Episode reward: [1.02905678], Episode length: 58
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19726447], Episode length: 72
+episodic_return=0.115673246552357, episodic_length=195
+Episode reward: [0.98589916], Episode length: 59
+episodic_return=0.026661574263307782, episodic_length=205
+Episode reward: [-0.00543754], Episode length: 85
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19663755], Episode length: 66
+episodic_return=0.1883892470248438, episodic_length=156
+Episode reward: [0.985084], Episode length: 47
+episodic_return=0.1738220727732976, episodic_length=163
+Episode reward: [1.0169382], Episode length: 55
+episodic_return=-0.053024479713117065, episodic_length=204
+Episode reward: [-0.00400769], Episode length: 75
+episodic_return=0.7987813501875247, episodic_length=41
+Episode reward: [1.09748181], Episode length: 11
+episodic_return=0.40646553553352627, episodic_length=99
+Episode reward: [1.07946996], Episode length: 27
+episodic_return=0.172251674477235, episodic_length=164
+Episode reward: [1.01498413], Episode length: 67
+episodic_return=0.4911404686396329, episodic_length=84
+Episode reward: [1.09421012], Episode length: 23
+episodic_return=-0.034059515064158136, episodic_length=200
+Episode reward: [0.00035853], Episode length: 74
+episodic_return=-0.054947470349104195, episodic_length=201
+Episode reward: [-0.00012504], Episode length: 63
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19830857], Episode length: 79
+episodic_return=0.25291631883469123, episodic_length=146
+Episode reward: [1.03320285], Episode length: 52
+episodic_return=0.5213232780990067, episodic_length=83
+Episode reward: [1.09454571], Episode length: 34
+episodic_return=0.012837440088805404, episodic_length=204
+Episode reward: [-0.00324555], Episode length: 63
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19658316], Episode length: 60
+episodic_return=0.4838889839354618, episodic_length=93
+Episode reward: [1.08472458], Episode length: 39
+episodic_return=0.24918220049778245, episodic_length=136
+Episode reward: [1.04293846], Episode length: 51
+episodic_return=0.2667803165897856, episodic_length=135
+Episode reward: [1.00575856], Episode length: 39
+episodic_return=0.3337368255681924, episodic_length=115
+Episode reward: [1.06364466], Episode length: 37
+episodic_return=-0.05283760119806562, episodic_length=200
+Episode reward: [6.01076324e-05], Episode length: 61
+episodic_return=-0.03377673618642802, episodic_length=206
+Episode reward: [-0.00515102], Episode length: 62
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19694963], Episode length: 64
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19816655], Episode length: 58
+episodic_return=0.5542826556399828, episodic_length=79
+Episode reward: [1.09893585], Episode length: 24
+episodic_return=0.7089934433347775, episodic_length=55
+Episode reward: [1.12203225], Episode length: 26
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.1965346], Episode length: 65
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19842207], Episode length: 56
+episodic_return=0.24918220049778245, episodic_length=136
+Episode reward: [1.00455251], Episode length: 45
+episodic_return=0.3472295400514384, episodic_length=111
+Episode reward: [1.06777529], Episode length: 35
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19579154], Episode length: 60
+episodic_return=0.16612928907491312, episodic_length=165
+Episode reward: [1.01466121], Episode length: 63
+episodic_return=0.22605395571499118, episodic_length=145
+Episode reward: [1.03466782], Episode length: 39
+episodic_return=-0.03299268913082898, episodic_length=200
+Episode reward: [8.48067665e-05], Episode length: 67
+episodic_return=0.12452023983772015, episodic_length=191
+Episode reward: [0.98848254], Episode length: 77
+episodic_return=-0.08751221877410477, episodic_length=207
+Episode reward: [-0.20258561], Episode length: 68
+episodic_return=0.3922826245566205, episodic_length=114
+Episode reward: [1.06470133], Episode length: 38
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19499262], Episode length: 46
+episodic_return=0.26639975882022376, episodic_length=136
+Episode reward: [1.04286392], Episode length: 49
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19579199], Episode length: 72
+episodic_return=-0.0467986608063686, episodic_length=205
+Episode reward: [-0.00508921], Episode length: 76
+episodic_return=0.12189879800704148, episodic_length=180
+Episode reward: [0.96192887], Episode length: 49
+episodic_return=0.6342234976820679, episodic_length=68
+Episode reward: [1.10948532], Episode length: 23
+episodic_return=-0.052496546336286434, episodic_length=200
+Episode reward: [0.00042165], Episode length: 67
+episodic_return=0.34877690674938083, episodic_length=112
+Episode reward: [1.06668502], Episode length: 36
+episodic_return=0.1084574377378581, episodic_length=191
+Episode reward: [0.98915333], Episode length: 67
+episodic_return=-0.03022989340611108, episodic_length=200
+Episode reward: [0.00060286], Episode length: 58
+episodic_return=-0.08763709658636372, episodic_length=208
+Episode reward: [-0.20360786], Episode length: 74
+episodic_return=-0.013395564259557895, episodic_length=200
+Episode reward: [2.78718205e-05], Episode length: 80
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19636823], Episode length: 59
+episodic_return=-0.011154703129502872, episodic_length=200
+Episode reward: [-0.00013736], Episode length: 77
+episodic_return=0.152079859248213, episodic_length=187
+Episode reward: [0.99274473], Episode length: 75
+episodic_return=0.6629634132812905, episodic_length=60
+Episode reward: [1.11748288], Episode length: 20
+episodic_return=0.6412119273100388, episodic_length=65
+Episode reward: [1.11227675], Episode length: 31
+episodic_return=0.1157007648354804, episodic_length=183
+Episode reward: [0.95819672], Episode length: 65
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19605486], Episode length: 59
+episodic_return=0.05751601562580563, episodic_length=203
+Episode reward: [0.19289034], Episode length: 71
+episodic_return=-0.08763709658636372, episodic_length=208
+Episode reward: [-0.20297641], Episode length: 55
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19559786], Episode length: 65
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19596041], Episode length: 64
+episodic_return=0.2853682463993412, episodic_length=126
+Episode reward: [1.05324038], Episode length: 34
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19738492], Episode length: 77
+episodic_return=0.5357680083829292, episodic_length=76
+Episode reward: [1.10207259], Episode length: 20
+episodic_return=0.46144327053136996, episodic_length=88
+Episode reward: [1.05165813], Episode length: 26
+episodic_return=0.01170906568791735, episodic_length=205
+Episode reward: [-0.00512996], Episode length: 76
+episodic_return=0.1518897914155762, episodic_length=183
+Episode reward: [0.99654135], Episode length: 71
+episodic_return=-0.053175245511227, episodic_length=200
+Episode reward: [0.00075008], Episode length: 60
+episodic_return=-0.03612989989633454, episodic_length=200
+Episode reward: [0.00032216], Episode length: 70
+episodic_return=0.21353485680295997, episodic_length=197
+Episode reward: [1.17991638], Episode length: 53
+episodic_return=0.12703302374234104, episodic_length=180
+Episode reward: [0.96170633], Episode length: 53
+episodic_return=0.35631011126562434, episodic_length=109
+Episode reward: [1.06979876], Episode length: 33
+episodic_return=0.5140514598330009, episodic_length=81
+Episode reward: [1.09687743], Episode length: 26
+episodic_return=0.38202668894955094, episodic_length=143
+Episode reward: [1.23207387], Episode length: 54
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.19998883], Episode length: 67
+episodic_return=0.29278923791806216, episodic_length=134
+Episode reward: [1.04511856], Episode length: 51
+episodic_return=0.3351078429914659, episodic_length=113
+Episode reward: [1.02707422], Episode length: 36
+episodic_return=0.3496547852985179, episodic_length=154
+Episode reward: [1.22153682], Episode length: 52
+episodic_return=-0.08712996589103439, episodic_length=204
+Episode reward: [-0.200219], Episode length: 65
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19642223], Episode length: 67
+episodic_return=0.16247430637878918, episodic_length=167
+Episode reward: [1.01246462], Episode length: 60
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.19898127], Episode length: 68
+episodic_return=0.08468329148560164, episodic_length=199
+Episode reward: [0.94306059], Episode length: 60
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19720169], Episode length: 74
+episodic_return=0.13545273601891838, episodic_length=180
+Episode reward: [1.00033161], Episode length: 55
+episodic_return=0.33832967220441473, episodic_length=113
+Episode reward: [1.02693759], Episode length: 34
+episodic_return=0.3985772652606686, episodic_length=100
+Episode reward: [1.07819287], Episode length: 35
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19707251], Episode length: 72
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19683369], Episode length: 86
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19555865], Episode length: 64
+episodic_return=0.4104046501990818, episodic_length=99
+Episode reward: [1.07919579], Episode length: 32
+episodic_return=-0.08763709658636372, episodic_length=208
+Episode reward: [-0.20283922], Episode length: 62
+episodic_return=0.5303409703809446, episodic_length=78
+Episode reward: [1.09976076], Episode length: 27
+episodic_return=-0.009756796410364768, episodic_length=201
+Episode reward: [-0.00021654], Episode length: 60
+episodic_return=-0.04141240140740629, episodic_length=200
+Episode reward: [0.00032626], Episode length: 69
+episodic_return=-0.04839158948837766, episodic_length=202
+Episode reward: [-0.00170689], Episode length: 60
+episodic_return=0.08832559740030682, episodic_length=199
+Episode reward: [0.98120131], Episode length: 67
+episodic_return=0.7453670088004145, episodic_length=50
+Episode reward: [1.12705215], Episode length: 20
+episodic_return=0.02874657915415662, episodic_length=200
+Episode reward: [0.19592563], Episode length: 74
+episodic_return=-0.04654662714270587, episodic_length=200
+Episode reward: [8.0617239e-05], Episode length: 73
+episodic_return=0.4558288378260563, episodic_length=89
+Episode reward: [1.08952332], Episode length: 21
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19540676], Episode length: 58
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19784804], Episode length: 68
+episodic_return=-0.08699996554649939, episodic_length=203
+Episode reward: [-0.1984405], Episode length: 56
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19552467], Episode length: 66
+episodic_return=0.456209952796651, episodic_length=103
+Episode reward: [1.07575828], Episode length: 30
+episodic_return=0.10952605484807029, episodic_length=189
+Episode reward: [0.95320953], Episode length: 55
+episodic_return=-0.05689937890040496, episodic_length=204
+Episode reward: [-0.00471993], Episode length: 88
+episodic_return=-0.0873860795698028, episodic_length=206
+Episode reward: [-0.20149285], Episode length: 68
+episodic_return=0.27703070158013726, episodic_length=185
+Episode reward: [1.1912874], Episode length: 54
+episodic_return=0.741909400465594, episodic_length=50
+Episode reward: [1.12697597], Episode length: 21
+episodic_return=0.285431667868173, episodic_length=171
+Episode reward: [1.20477745], Episode length: 54
+episodic_return=0.23353410992429138, episodic_length=140
+Episode reward: [1.03947799], Episode length: 39
+episodic_return=0.4087004032860613, episodic_length=98
+Episode reward: [1.04185312], Episode length: 29
+episodic_return=0.2326496697605456, episodic_length=153
+Episode reward: [1.02660579], Episode length: 52
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19773778], Episode length: 64
+episodic_return=-0.08686865206717109, episodic_length=202
+Episode reward: [-0.19745359], Episode length: 56
+episodic_return=0.2010841862423752, episodic_length=150
+Episode reward: [0.9904132], Episode length: 53
+episodic_return=0.24120979840380566, episodic_length=193
+Episode reward: [1.14491231], Episode length: 58
+episodic_return=0.6421457886116619, episodic_length=66
+Episode reward: [1.11125754], Episode length: 30
+episodic_return=0.2689533855383584, episodic_length=136
+Episode reward: [1.04254937], Episode length: 56
+episodic_return=-0.08725866623212404, episodic_length=205
+Episode reward: [-0.20115162], Episode length: 79
+episodic_return=0.2098641957032567, episodic_length=152
+Episode reward: [1.02685515], Episode length: 58
+episodic_return=0.19193379753221484, episodic_length=163
+Episode reward: [1.01658524], Episode length: 58
+episodic_return=0.24880443157605814, episodic_length=140
+Episode reward: [1.03887123], Episode length: 52
+episodic_return=-0.08660203251420374, episodic_length=200
+Episode reward: [-0.19516916], Episode length: 49
+episodic_return=-0.08673601218906171, episodic_length=201
+Episode reward: [-0.19644713], Episode length: 60
+episodic_return=-0.05384043857258623, episodic_length=200
+Episode reward: [0.00069815], Episode length: 63

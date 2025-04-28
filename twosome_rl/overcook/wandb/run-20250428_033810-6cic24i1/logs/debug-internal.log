@@ -1,0 +1,16 @@
+{"time":"2025-04-28T03:38:10.706303999-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/twosome_rl/overcook/wandb/run-20250428_033810-6cic24i1/logs/debug-core.log"}
+{"time":"2025-04-28T03:38:11.189816098-04:00","level":"INFO","msg":"created new stream","id":"6cic24i1"}
+{"time":"2025-04-28T03:38:11.189894714-04:00","level":"INFO","msg":"stream: started","id":"6cic24i1"}
+{"time":"2025-04-28T03:38:11.189920351-04:00","level":"INFO","msg":"sender: started","stream_id":"6cic24i1"}
+{"time":"2025-04-28T03:38:11.189951211-04:00","level":"INFO","msg":"handler: started","stream_id":"6cic24i1"}
+{"time":"2025-04-28T03:38:11.189973138-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"6cic24i1"}
+{"time":"2025-04-28T03:38:11.656033113-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-28T03:38:11.656559453-04:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-04-28T03:38:15.341127209-04:00","level":"INFO","msg":"stream: closing","id":"6cic24i1"}
+{"time":"2025-04-28T03:38:15.341169336-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-28T03:38:15.341223511-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-28T03:38:16.206924672-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-28T03:38:16.576836205-04:00","level":"INFO","msg":"handler: closed","stream_id":"6cic24i1"}
+{"time":"2025-04-28T03:38:16.576892055-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6cic24i1"}
+{"time":"2025-04-28T03:38:16.576923856-04:00","level":"INFO","msg":"sender: closed","stream_id":"6cic24i1"}
+{"time":"2025-04-28T03:38:16.576995989-04:00","level":"INFO","msg":"stream: closed","id":"6cic24i1"}

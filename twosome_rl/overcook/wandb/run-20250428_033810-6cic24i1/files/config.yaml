@@ -1,0 +1,57 @@
+_wandb:
+    value:
+        cli_version: 0.19.10
+        code_path: code/twosome_rl/overcook/ppo_rl.py
+        m: []
+        python_version: 3.9.21
+        t:
+            "1":
+                - 1
+                - 55
+                - 105
+            "2":
+                - 1
+                - 55
+                - 105
+            "3":
+                - 13
+                - 16
+                - 23
+                - 35
+                - 55
+            "4": 3.9.21
+            "5": 0.19.10
+            "8":
+                - 5
+            "12": 0.19.10
+            "13": linux-x86_64
+ent_coef:
+    value: 0.01
+env_id:
+    value: Overcooked-LLMA-v4
+env_reward:
+    value:
+        - 0.1
+        - 1
+        - 0
+        - 0.001
+epochs:
+    value: 50
+exp_name:
+    value: ppo
+gamma:
+    value: 0.99
+hid:
+    value: 64
+l:
+    value: 2
+norm_adv:
+    value: false
+seed:
+    value: 0
+steps:
+    value: 4000
+track:
+    value: true
+wandb_project_name:
+    value: twosome_ppo

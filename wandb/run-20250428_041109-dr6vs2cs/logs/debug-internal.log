@@ -1,0 +1,9 @@
+{"time":"2025-04-28T04:11:09.78787273-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/wandb/run-20250428_041109-dr6vs2cs/logs/debug-core.log"}
+{"time":"2025-04-28T04:11:10.194881776-04:00","level":"INFO","msg":"created new stream","id":"dr6vs2cs"}
+{"time":"2025-04-28T04:11:10.194932848-04:00","level":"INFO","msg":"stream: started","id":"dr6vs2cs"}
+{"time":"2025-04-28T04:11:10.194954648-04:00","level":"INFO","msg":"sender: started","stream_id":"dr6vs2cs"}
+{"time":"2025-04-28T04:11:10.194959505-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"dr6vs2cs"}
+{"time":"2025-04-28T04:11:10.194993201-04:00","level":"INFO","msg":"handler: started","stream_id":"dr6vs2cs"}
+{"time":"2025-04-28T04:11:10.508577292-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-28T04:13:26.588185592-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/gxh2538351719-xiamen-university/twosome_ppo/dr6vs2cs/file_stream"}
+{"time":"2025-04-28T04:13:26.588230587-04:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/gxh2538351719-xiamen-university/twosome_ppo/dr6vs2cs/file_stream: {\"error\":\"run twosome_ppo/dr6vs2cs not found while streaming file\"}"}

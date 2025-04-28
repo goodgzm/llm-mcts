@@ -1,0 +1,77 @@
+pygame 2.4.0 (SDL 2.26.4, Python 3.9.21)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:25: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.act_buf[self.ptr] = act
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:26: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.rew_buf[self.ptr] = rew
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:27: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.val_buf[self.ptr] = val
+/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py:28: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  self.logp_buf[self.ptr] = logp
+episodic_return=-0.07148673901888904, episodic_length=200
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.06476109849316965, episodic_length=204
+episodic_return=0.016833543244647513, episodic_length=202
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.024777426401914403, episodic_length=204
+episodic_return=-0.00011696130653065612, episodic_length=201
+episodic_return=-0.08673601218906171, episodic_length=201
+episodic_return=-0.060163303671883175, episodic_length=207
+episodic_return=-0.04976304842408907, episodic_length=201
+episodic_return=-0.08725866623212404, episodic_length=205
+episodic_return=-0.04530556053445966, episodic_length=200
+episodic_return=-0.03472627244881019, episodic_length=202
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.039334647866600396, episodic_length=202
+episodic_return=-0.06896996891479339, episodic_length=208
+episodic_return=-0.03652940203970062, episodic_length=204
+episodic_return=-0.046128835246371375, episodic_length=200
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.08712996589103439, episodic_length=204
+episodic_return=-0.08725866623212404, episodic_length=205
+episodic_return=-0.03310918966834323, episodic_length=201
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.015546709786974536, episodic_length=200
+episodic_return=-0.05183904489069714, episodic_length=203
+episodic_return=-0.030257023848974388, episodic_length=204
+episodic_return=-0.02981337477717863, episodic_length=203
+episodic_return=0.0019316532717124472, episodic_length=200
+episodic_return=0.058236009249905324, episodic_length=200
+episodic_return=-0.03297520999348527, episodic_length=200
+episodic_return=0.021514966007108935, episodic_length=201
+episodic_return=0.004661436485429348, episodic_length=200
+episodic_return=-0.08686865206717109, episodic_length=202
+episodic_return=-0.047590885589921514, episodic_length=205
+episodic_return=-0.08673601218906171, episodic_length=201
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.04965353750107246, episodic_length=203
+episodic_return=-0.02906655751651092, episodic_length=200
+episodic_return=-0.06795381956999665, episodic_length=203
+episodic_return=-0.04139766748755622, episodic_length=200
+episodic_return=-0.06236036790974575, episodic_length=200
+episodic_return=-0.024794150127133936, episodic_length=201
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.0687043137155933, episodic_length=203
+episodic_return=-0.046395454799338716, episodic_length=202
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.028302089764776134, episodic_length=203
+episodic_return=-0.08686865206717109, episodic_length=202
+episodic_return=-0.08660203251420374, episodic_length=200
+episodic_return=-0.06124503611943081, episodic_length=201
+episodic_return=-0.0481149767340223, episodic_length=206
+episodic_return=-0.0873860795698028, episodic_length=206
+episodic_return=-0.08673601218906171, episodic_length=201
+Warning: trajectory cut off by epoch at 23 steps.
+Traceback (most recent call last):
+  File "/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py", line 223, in <module>
+    ppo(envs, actor_critic = core_rl.MLPActorCritic,
+  File "/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py", line 153, in ppo
+    "kl": kl.item(),
+AttributeError: 'float' object has no attribute 'item'
+Traceback (most recent call last):
+  File "/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py", line 223, in <module>
+    ppo(envs, actor_critic = core_rl.MLPActorCritic,
+  File "/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py", line 153, in ppo
+    "kl": kl.item(),
+AttributeError: 'float' object has no attribute 'item'

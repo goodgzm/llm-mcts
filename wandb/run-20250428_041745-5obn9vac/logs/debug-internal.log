@@ -1,0 +1,6 @@
+{"time":"2025-04-28T04:17:45.098233055-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/wandb/run-20250428_041745-5obn9vac/logs/debug-core.log"}
+{"time":"2025-04-28T04:17:45.509547856-04:00","level":"INFO","msg":"created new stream","id":"5obn9vac"}
+{"time":"2025-04-28T04:17:45.509624523-04:00","level":"INFO","msg":"stream: started","id":"5obn9vac"}
+{"time":"2025-04-28T04:17:45.50965315-04:00","level":"INFO","msg":"handler: started","stream_id":"5obn9vac"}
+{"time":"2025-04-28T04:17:45.509654867-04:00","level":"INFO","msg":"sender: started","stream_id":"5obn9vac"}
+{"time":"2025-04-28T04:17:45.509712108-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"5obn9vac"}

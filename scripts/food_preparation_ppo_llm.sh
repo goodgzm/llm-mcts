@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=1 \
+CUDA_VISIBLE_DEVICES=0 \
 python twosome/virtualhome/ppo_llm_v1.py \
   --exp-name "heat_pancake_ppo_llm"\
   --policy-learning-rate 1e-6 \
@@ -18,6 +18,6 @@ python twosome/virtualhome/ppo_llm_v1.py \
   --gamma 0.95 \
   --seed 10 \
   --llm-base-model "deepseek-ai/DeepSeek-R1-Distill-Llama-8B" \
-  --llm-base-model-path "/data/gzm/TWOSOME-main/model/deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+  --llm-base-model-path "/data/gzm/model/deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
 
 

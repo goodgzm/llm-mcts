@@ -41,7 +41,8 @@ class Actor(nn.Module):
         logp_a = None
         if act is not None:
             logp_a = self._log_prob_from_distribution(pi, act)
-        return pi, logp_a
+            entropy = pi.entropy()
+        return pi, logp_a, entropy
 
 class MLPCategoricalActor(Actor):
     def __init__(self, obs_dim, act_dim, hidden_sizes, activation):

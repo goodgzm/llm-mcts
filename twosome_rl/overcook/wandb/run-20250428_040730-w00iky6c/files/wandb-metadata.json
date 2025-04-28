@@ -1,0 +1,60 @@
+{
+  "os": "Linux-5.15.0-134-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-04-28T08:07:30.544209Z",
+  "program": "/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py",
+  "codePath": "twosome_rl/overcook/ppo_rl.py",
+  "git": {
+    "remote": "git@github.com:goodgzm/llm-mcts.git",
+    "commit": "2c78fd02f8607bfc8da6db7ac08441d7b9c59567"
+  },
+  "email": "gxh2538351719@gmail.com",
+  "root": "/data/gzm/TWOSOME-main/twosome_rl/overcook",
+  "host": "user-PR4910W",
+  "executable": "/data/gzm/.conda/envs/twosome/bin/python",
+  "codePathLocal": "ppo_rl.py",
+  "cpu_count": 48,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA A40",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "908033413120",
+      "used": "308903317504"
+    }
+  },
+  "memory": {
+    "total": "1081818398720"
+  },
+  "cpu": {
+    "count": 48,
+    "countLogical": 96
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

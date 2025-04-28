@@ -1,0 +1,97 @@
+{
+  "os": "Linux-5.15.0-134-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-04-28T08:21:12.446572Z",
+  "args": [
+    "--env-id",
+    "Overcooked-LLMA-v4",
+    "--task",
+    "0",
+    "--map-type",
+    "A",
+    "--exp-name",
+    "tomato_salad_ppo",
+    "--hid",
+    "128",
+    "--l",
+    "2",
+    "--gamma",
+    "0.99",
+    "--seed",
+    "10",
+    "--steps",
+    "5000",
+    "--epochs",
+    "200",
+    "--env-reward",
+    "0.2",
+    "1",
+    "0",
+    "0.001",
+    "--ent-coef",
+    "0",
+    "--norm-adv",
+    "False",
+    "--track",
+    "True",
+    "--wandb-project-name",
+    "twosome_ppo",
+    "--cuda",
+    "False"
+  ],
+  "program": "/data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py",
+  "codePath": "twosome_rl/overcook/ppo_rl.py",
+  "git": {
+    "remote": "git@github.com:goodgzm/llm-mcts.git",
+    "commit": "2c78fd02f8607bfc8da6db7ac08441d7b9c59567"
+  },
+  "email": "gxh2538351719@gmail.com",
+  "root": "/data/gzm/TWOSOME-main",
+  "host": "user-PR4910W",
+  "executable": "/data/gzm/.conda/envs/twosome/bin/python",
+  "codePathLocal": "twosome_rl/overcook/ppo_rl.py",
+  "cpu_count": 48,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA A40",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "908033413120",
+      "used": "308903366656"
+    }
+  },
+  "memory": {
+    "total": "1081818398720"
+  },
+  "cpu": {
+    "count": 48,
+    "countLogical": 96
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

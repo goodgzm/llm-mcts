@@ -1,20 +1,21 @@
 CUDA_VISIBLE_DEVICES=0 \
-python twosome_rl/ppo.py \
-  --exp-name "tomato_salad_ppo"\
-  --policy-learning-rate 5e-7 \
-  --value-learning-rate 1e-5 \
-  --num-envs 4 \
-  --num-steps 128 \
-  --update-epochs 1 \
-  --total-timesteps 1000000 \
-  --critic-warm-up-steps 0 \
-  --env-reward 0.2 1 0.1 0.001 \
-  --target-kl 0.02 \
-  --gradient-checkpointing-steps 8 \
+python /data/gzm/TWOSOME-main/twosome_rl/overcook/ppo_rl.py \
+  --env-id 'Overcooked-LLMA-v4' \
   --task 0 \
-  --env-id "Overcooked-LLMA-v4" \
-  --record-path "workdir/origin" \
-  --update-epochs 50\
+  --map-type "A" \
+  --exp-name "tomato_salad_ppo" \
+  --hid 128 \
+  --l 2 \
+  --gamma 0.99 \
+  --seed 10 \
+  --steps 5000 \
+  --epochs 100 \
+  --env-reward 0.2 1 0 0.001 \
+  --ent-coef 0 \
+  --norm-adv False \
+  --track True \
+  --wandb-project-name "twosome_ppo" \
+  --cuda False \
   # --cuda false \
 
 

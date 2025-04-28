@@ -1,0 +1,9 @@
+{"time":"2025-04-28T04:06:46.674401232-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/wandb/run-20250428_040646-bcx89x52/logs/debug-core.log"}
+{"time":"2025-04-28T04:06:47.069123751-04:00","level":"INFO","msg":"created new stream","id":"bcx89x52"}
+{"time":"2025-04-28T04:06:47.069174977-04:00","level":"INFO","msg":"stream: started","id":"bcx89x52"}
+{"time":"2025-04-28T04:06:47.069200904-04:00","level":"INFO","msg":"handler: started","stream_id":"bcx89x52"}
+{"time":"2025-04-28T04:06:47.069270462-04:00","level":"INFO","msg":"sender: started","stream_id":"bcx89x52"}
+{"time":"2025-04-28T04:06:47.069277443-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"bcx89x52"}
+{"time":"2025-04-28T04:06:47.38064539-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-28T04:07:18.415670736-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/gxh2538351719-xiamen-university/twosome_ppo/bcx89x52/file_stream"}
+{"time":"2025-04-28T04:07:18.41577015-04:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/gxh2538351719-xiamen-university/twosome_ppo/bcx89x52/file_stream: {\"error\":\"run twosome_ppo/bcx89x52 not found while streaming file\"}"}

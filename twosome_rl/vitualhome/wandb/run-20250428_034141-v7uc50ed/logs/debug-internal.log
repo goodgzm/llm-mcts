@@ -1,0 +1,10 @@
+{"time":"2025-04-28T03:41:41.556466923-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/data/gzm/TWOSOME-main/twosome_rl/vitualhome/wandb/run-20250428_034141-v7uc50ed/logs/debug-core.log"}
+{"time":"2025-04-28T03:41:41.956411911-04:00","level":"INFO","msg":"created new stream","id":"v7uc50ed"}
+{"time":"2025-04-28T03:41:41.956500412-04:00","level":"INFO","msg":"stream: started","id":"v7uc50ed"}
+{"time":"2025-04-28T03:41:41.956535202-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"v7uc50ed"}
+{"time":"2025-04-28T03:41:41.956552671-04:00","level":"INFO","msg":"handler: started","stream_id":"v7uc50ed"}
+{"time":"2025-04-28T03:41:41.956589197-04:00","level":"INFO","msg":"sender: started","stream_id":"v7uc50ed"}
+{"time":"2025-04-28T03:41:42.279761097-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-28T03:41:42.28008553-04:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-04-28T03:44:58.284212403-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/gxh2538351719-xiamen-university/twosome_ppo/v7uc50ed/file_stream"}
+{"time":"2025-04-28T03:44:58.284318907-04:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/gxh2538351719-xiamen-university/twosome_ppo/v7uc50ed/file_stream: {\"error\":\"run twosome_ppo/v7uc50ed not found while streaming file\"}"}
