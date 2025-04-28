@@ -196,7 +196,9 @@ if __name__ == "__main__":
         [make_env(args.env_id, args.seed + i, i, args.capture_video, run_name, env_params) for i in range(args.num_envs)]
     )
     assert isinstance(envs.single_action_space, gym.spaces.Discrete), "only discrete action space is supported"
-
+    print(f"############single_action_space: {envs.single_action_space}")
+    print(f"############single_action_space.shape: {envs.single_action_space.shape}")
+    input()
     " set agent and LLM model"
     if args.resume:
         agent = LLMAgent(normalization_mode=args.normalization_mode, load_path=args.load_path, load_8bit=args.load_8bit, task=args.task, device=device, llm_base_model=args.llm_base_model, llm_base_model_path=args.llm_base_model_path)
@@ -256,7 +258,6 @@ if __name__ == "__main__":
             with torch.no_grad():
                 # 基于 LLM 大模型（Actor）计算动作、动作的对数概率、熵和状态价值
                 action, logprob, _, value = agent.get_action_and_value(next_obs)
-                print("###############action: ", action)
                 values[step] = value.flatten() 
             actions[step] = action
             logprobs[step] = logprob
